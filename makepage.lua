@@ -1,3 +1,5 @@
+-- THIS FILE IS LICENSED UNDER CC0 aka i dont give a single flying fluffy bear
+
 -- JSON DATA is extracted from the JS variable "g_rgItemDefs", on https://store.steampowered.com/holidaymarket/
 local eventCodeName = "Winter2019"
 --
