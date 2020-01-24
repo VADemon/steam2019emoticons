@@ -1,4 +1,5 @@
--- THIS FILE IS LICENSED UNDER CC0 aka i dont give a single flying fluffy bear
+-- THIS FILE AND UPLOADED HTML PAGES ARE LICENSED UNDER CC0 aka i dont give a single flying fluffy bear
+-- THE JSON DATA IS PROPERTY OF VALVE (well, legally. Don't you hate when you have overly complex abstractions in life that get you nowhere but become so stacked and twisted that you, as a normal human being living your life, can no longer rely on your own ability to reason and act but require and are forced to seek professional help to solve something that was never intended to hurt you but help you, yet now you would be totally helpless on your own: facing legal questions and the insecurity that stems from your inability to make out a path to the solution in this artificial field constructed within our society)
 
 -- JSON DATA is extracted from the JS variable "g_rgItemDefs", on https://store.steampowered.com/holidaymarket/
 local eventCodeName = "Winter2019"
@@ -10,9 +11,25 @@ function writeHtmlHeader(file)
 <html>
 <head>
 <title>Steam 2019 emoticons showcase</title>
-<style>mono {font-family: monospace, monospace; background-color: rgba(0,0,0,0.4)}</style>
+<style type="text/css">
+mono {
+	font-family: monospace, monospace;
+	background-color: rgba(0,0,0,0.4);
+}
+body {
+	color: #ddd;
+	background-color: #1b2838 !important;
+	font-size: 13px;
+	font-family: Arial, Helvetica, Verdana, sans-serif;
+}
+
+a, a:link {color: #c6d4df}
+a:hover {color: #ebebeb}
+a:visited {color: #7590a5}
+
+</style>
 </head>
-<body bgcolor="#1b2838" style="font-family: Arial, Helvetica, Verdana, sans-serif; font-size: 13px;">
+<body>
 ]])
 end
 
@@ -25,7 +42,7 @@ function finishHtmlFooter(file)
 	file:close()
 end
 
-fullTbl = JSON:decode(io.open("itemsdata.json","r"):read("*a"))
+fullTbl = JSON:decode(io.open("itemsdata2019christmas.json","r"):read("*a"))
 
 emoticons = io.open("index.html", "w")
 stickers = io.open("stickers.html", "w")
