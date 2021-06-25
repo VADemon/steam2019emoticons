@@ -168,8 +168,8 @@ function writePages(sale)
 		
 		if item.type == "emoticon" then
 			emoticons:write(
-				(('<img src="'.. STEAM_CONST.COMMUNITY_CDN_URL ..'economy/emoticonlarge/%item_name_clean%" class="bigimg">\r\n '..
-				'<img src="'.. STEAM_CONST.COMMUNITY_CDN_URL ..'economy/emoticon/%item_name_clean%">'..
+				(('<img src="'.. STEAM_CONST.COMMUNITY_CDN_URL ..'economy/emoticonlarge/%item_name_clean%" class="bigimg" title="“%item_description%“ Steam emoticon" alt="%item_name% (big)">\r\n '..
+				'<img src="'.. STEAM_CONST.COMMUNITY_CDN_URL ..'economy/emoticon/%item_name_clean%" alt="%item_name% (small)">'..
 				'<mono>%item_name%</mono> - alt links: '..
 				'<a href="'.. STEAM_CONST.MEDIA_CDN_COMMUNITY_URL ..'images/items/%appid%/%item_image_large%">large</a> / '..
 				'<a href="'.. STEAM_CONST.MEDIA_CDN_COMMUNITY_URL ..'images/items/%appid%/%item_image_small%">small</a>'
@@ -180,12 +180,17 @@ function writePages(sale)
 			end
 			emoticons:write('<br><br>\r\n')
 		elseif item.type == "chat_sticker" then
-			item.sticker_name = item.sticker_name or eventCodeName .. item.item_name:gsub("[^A-z0-9_-]", "")
+			item.codeName = item.sticker_name or eventCodeName .. item.item_name:gsub("[^A-z0-9_-]", "")
+			-- alrigthy Steam, so between Winter 2019, Lunar 2020 and Summer 2021
+			-- you can't decide what's an item name/title/description are supposed to be?
+			if sale.codeName == "Winter2019" then
+				item.lore = item.item_description
+			end
 			
 			stickers:write(
-				(('<img src="'.. STEAM_CONST.MEDIA_CDN_COMMUNITY_URL ..'images/items/%appid%/%item_image_small%" class="bigimg">\r\n '..
-				'<img src="'.. STEAM_CONST.MEDIA_CDN_COMMUNITY_URL ..'images/items/%appid%/%item_image_large%" class="bigimg">'..
-				' %item_name% - assumed command: <mono>/sticker '.. item.sticker_name ..'</mono>'
+				(('<img src="'.. STEAM_CONST.MEDIA_CDN_COMMUNITY_URL ..'images/items/%appid%/%item_image_small%" class="bigimg" title="„%item_title%“ Steam sticker" alt="%item_name% (animated)">\r\n '..
+				'<img src="'.. STEAM_CONST.MEDIA_CDN_COMMUNITY_URL ..'images/items/%appid%/%item_image_large%" class="bigimg" title="„%item_title%“ Steam sticker" alt="%item_name% (static)">'..
+				' %item_name% - assumed command: <mono>/sticker '.. item.codeName ..'</mono>'
 				):gsub("%%([%w%-_]+)%%", item))
 			)
 			
