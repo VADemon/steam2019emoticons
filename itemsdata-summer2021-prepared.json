@@ -1,5 +1,6 @@
 [ {
   "appid": 1658760,
+  "custom_description": "Obtainable: Genre 1, Choice 1.",
   "item_image_large": "6291dbaf1062c32123914a521cde1251eb9cc590.png",
   "item_image_small": "306b20b41509a6364e9c72df316b9ae48484280e.png",
   "item_name": "Cry Some More",
@@ -8,6 +9,7 @@
   "type": "chat_sticker"
 }, {
   "appid": 1658760,
+  "custom_description": "Obtainable: Genre 1, Choice 2.",
   "item_image_large": "4ceb041bd2d867bc0ea1960ba52202a54cb0b1fb.png",
   "item_image_small": "328cecc786df57d73253a365d9ab2149a8ff880f.png",
   "item_name": "Destination, Unknown!",
@@ -16,6 +18,7 @@
   "type": "chat_sticker"
 }, {
   "appid": 1658760,
+  "custom_description": "Obtainable: Genre 2, Choice 1.",
   "item_image_large": "f72e88a7cbf0e241559104d1b861671a3f5b62e2.png",
   "item_image_small": "f954a325e4ee70b561f3376b04da0e59fe4834e2.png",
   "item_name": "Lead Poisoning!",
@@ -24,6 +27,7 @@
   "type": "chat_sticker"
 }, {
   "appid": 1658760,
+  "custom_description": "Obtainable: Genre 2, Choice 2.",
   "item_image_large": "02bd11e7494880fd89a86366526716446c0ca717.png",
   "item_image_small": "1d618016f96751841a508f37f0730d8153e46fb3.png",
   "item_name": "Twenty Years Pass...",
@@ -32,6 +36,7 @@
   "type": "chat_sticker"
 }, {
   "appid": 1658760,
+  "custom_description": "Obtainable: Genre 3, Choice 1.",
   "item_image_large": "f4d3f8de167f4359164758cce20e032b3c2da9ac.png",
   "item_image_small": "ea111d575b728c9662c392b8643a950433bb9bc9.png",
   "item_name": "Fantasy Genius",
@@ -40,6 +45,7 @@
   "type": "chat_sticker"
 }, {
   "appid": 1658760,
+  "custom_description": "Obtainable: Genre 3, Choice 2.",
   "item_image_large": "336ca79a93ec35c65aee46c751e7067d5857d56d.png",
   "item_image_small": "6d0e8eef7c5953bdcbb1a44e47ea1fa8f10dec21.png",
   "item_name": "You Look Great",
@@ -48,6 +54,7 @@
   "type": "chat_sticker"
 }, {
   "appid": 1658760,
+  "custom_description": "Obtainable: Genre 4, Choice 1.",
   "item_image_large": "6c43250a5552894d9d8cce35e08e374b65069011.png",
   "item_image_small": "5f86059b76ab93b9ebc96563532dfb631cd694d9.png",
   "item_name": "Keep Those Hands Up",
@@ -56,6 +63,7 @@
   "type": "chat_sticker"
 }, {
   "appid": 1658760,
+  "custom_description": "Obtainable: Genre 4, Choice 2.",
   "item_image_large": "167397372ffb21ad240f6abe706b315c3a0c0b44.png",
   "item_image_small": "4f2249972f06566c4795b6ee47bf9f4c52697b60.png",
   "item_name": "Watership Down",
@@ -64,6 +72,7 @@
   "type": "chat_sticker"
 }, {
   "appid": 1658760,
+  "custom_description": "Obtainable: Genre 5, Choice 1.",
   "item_image_large": "d2e3bb8fd5dcc626064f7ce66cd50fe47e708952.png",
   "item_image_small": "4b04c80c01dfbdd81a5899c6dbdc3c5681165959.png",
   "item_name": "Flawless Pancakes",
@@ -72,6 +81,7 @@
   "type": "chat_sticker"
 }, {
   "appid": 1658760,
+  "custom_description": "Obtainable: Genre 5, Choice 2.",
   "item_image_large": "1f43d52ca4c406bfb31b93abc730e42fd3ff9068.png",
   "item_image_small": "4fc61e025b387e5c796e2a6a0204941a9c561217.png",
   "item_name": "Bus Ride",
@@ -80,6 +90,7 @@
   "type": "chat_sticker"
 }, {
   "appid": 1658760,
+  "custom_description": "Obtainable: Genre 6, Choice 1.",
   "item_image_large": "1fed3507136e451ea46ed2f28c0d53787e0cc8aa.png",
   "item_image_small": "61039feb7b51851688fd5ff496d013eb20563036.png",
   "item_name": "Good Boy",
@@ -88,6 +99,7 @@
   "type": "chat_sticker"
 }, {
   "appid": 1658760,
+  "custom_description": "Obtainable: Genre 6, Choice 2.",
   "item_image_large": "b7d4bcfd6bbfa7bc8a37f2e0e22be488e9b7b5d5.png",
   "item_image_small": "507be0736a6dc4a675df1aa5201227b92ad8b6ff.png",
   "item_name": "Flaming Car Husk",
@@ -96,6 +108,7 @@
   "type": "chat_sticker"
 }, {
   "appid": 1658760,
+  "custom_description": "Obtainable: Genre 7, Choice 1.",
   "item_image_large": "067fa41236773e8ae960e3c0f8587a99b895d3c8.png",
   "item_image_small": "f37c4b6b93297b636baf41666bedc1dc1eb91e4e.png",
   "item_name": "Spider Babies",
@@ -104,6 +117,7 @@
   "type": "chat_sticker"
 }, {
   "appid": 1658760,
+  "custom_description": "Obtainable: Genre 7, Choice 2.",
   "item_image_large": "72219fcb00a4e45e8da1f50907914f7d97da4c1f.png",
   "item_image_small": "ed0f5181578ffca79866d3aacba0ae63f559679b.png",
   "item_name": "Sgghrhh…",
@@ -112,6 +126,7 @@
   "type": "chat_sticker"
 }, {
   "appid": 1658760,
+  "custom_description": "Obtainable: Genre 8, Choice 1.",
   "item_image_large": "e2d2d96deb67c6626320a67fd6e5cb097ab89706.png",
   "item_image_small": "c4cb98d5b9729fc6d3d2569801d3f1c2d680e1bc.png",
   "item_name": "Your Face",
@@ -120,6 +135,7 @@
   "type": "chat_sticker"
 }, {
   "appid": 1658760,
+  "custom_description": "Obtainable: Genre 8, Choice 2.",
   "item_image_large": "cdf4b2a19eae52b6ba9f5419b78f5d1cfd84dc1e.png",
   "item_image_small": "d2525acc674c2c3c0b64307ed9d9bcec329cf3df.png",
   "item_name": "Sick Trick",
@@ -128,6 +144,7 @@
   "type": "chat_sticker"
 }, {
   "appid": 1658760,
+  "custom_description": "Obtainable: Genre 9, Choice 1.",
   "item_image_large": "f988feb2161886e9cc518afce96d246c7a7000a7.png",
   "item_image_small": "ad96681a9a49c8f79c7bca17782bbb1c636cce43.png",
   "item_name": "Assassinaire",
@@ -136,6 +153,7 @@
   "type": "chat_sticker"
 }, {
   "appid": 1658760,
+  "custom_description": "Obtainable: Genre 9, Choice 2.",
   "item_image_large": "d898061a9b699c7a1ba629ac62aac08c3c9150e3.png",
   "item_image_small": "cd46c816565e819d3592b47da990e0e264728948.png",
   "item_name": "Feathers",
@@ -144,6 +162,7 @@
   "type": "chat_sticker"
 }, {
   "appid": 1658760,
+  "custom_description": "Obtainable: Genre 10, Choice 1.",
   "item_image_small": "51b4e53751398946664838cb0f1edfc70d7e8b48.png",
   "item_name": "Modest Luxury",
   "item_title": "Modest Luxury",
@@ -151,6 +170,7 @@
   "type": "chat_sticker"
 }, {
   "appid": 1658760,
+  "custom_description": "Obtainable: Genre 10, Choice 2.",
   "item_image_large": "fd02c400caa4aac3667696e357bfea70a57e5bdf.png",
   "item_image_small": "a4a666899c4ef11a32095e7aee3e1db429c98792.png",
   "item_name": "Neon Breeze",
@@ -159,6 +179,7 @@
   "type": "chat_sticker"
 }, {
   "appid": 1658760,
+  "custom_description": "Obtainable: Genre 11, Choice 1.",
   "item_image_large": "2ad9f2126151effb0b052d7c81e78f29968e5481.png",
   "item_image_small": "c41ea9dccc47064fab9e1f37e531e0b59f0c9a2d.png",
   "item_name": "Wow, That Hurt",
@@ -167,6 +188,7 @@
   "type": "chat_sticker"
 }, {
   "appid": 1658760,
+  "custom_description": "Obtainable: Genre 11, Choice 2.",
   "item_image_large": "a74a27659e0a99cb89c639c7c8e441b49eaf31ce.png",
   "item_image_small": "d09c4f7468b638dbae3a9217502db58ee8d014f1.png",
   "item_name": "Pacifist",
@@ -175,6 +197,7 @@
   "type": "chat_sticker"
 }, {
   "appid": 1658760,
+  "custom_description": "Obtainable: Genre 12, Choice 1.",
   "item_image_large": "faf355d3cc8072ed437f9b1ce9572483c5a8d0b3.png",
   "item_image_small": "54e52cae855091adb1f17136ecfb850660474086.png",
   "item_name": "Space Fire",
@@ -183,6 +206,7 @@
   "type": "chat_sticker"
 }, {
   "appid": 1658760,
+  "custom_description": "Obtainable: Genre 12, Choice 2.",
   "item_image_large": "db21b5a855770f539678a787d212fa7a685720bf.png",
   "item_image_small": "8a93aadb2483d455b72b6e17134b91a88b2d0855.png",
   "item_name": "Peace in Space",
@@ -191,6 +215,7 @@
   "type": "chat_sticker"
 }, {
   "appid": 1658760,
+  "custom_description": "Obtainable: Genre 13, Choice 1.",
   "item_image_large": "670126880829aa1770dd97243f3c1a26c9a32e14.png",
   "item_image_small": "6691c887aa569b5cd0a1db68a34d2b76e5a835ad.png",
   "item_name": "Hey, Terry",
@@ -199,6 +224,7 @@
   "type": "chat_sticker"
 }, {
   "appid": 1658760,
+  "custom_description": "Obtainable: Genre 13, Choice 2.",
   "item_image_large": "2792c8e6f6e741f25b3ad6baa74c026f8ee50d8a.png",
   "item_image_small": "841c45a41c0f13276ef299c9548175a878cf6de7.png",
   "item_name": "Walk, Don't Run",
@@ -207,6 +233,7 @@
   "type": "chat_sticker"
 }, {
   "appid": 1658760,
+  "custom_description": "Obtainable: Genre 14, Choice 1.",
   "item_image_large": "a8759aedf108ba3c2ea7d16bcd9061766c6b0812.png",
   "item_image_small": "4c06a5ee1a548782a8a044ab9e594574029e6734.png",
   "item_name": "Oblivion Technique",
@@ -215,6 +242,7 @@
   "type": "chat_sticker"
 }, {
   "appid": 1658760,
+  "custom_description": "Obtainable: Genre 14, Choice 2.",
   "item_image_large": "ea81582b6eb6d389ef8d2f0ae4b551728a498d39.png",
   "item_image_small": "8b4fce3439da3b96728454fe0ba7fc989c67e673.png",
   "item_name": "Sincere Apology Technique",

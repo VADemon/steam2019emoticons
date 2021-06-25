@@ -20,7 +20,8 @@ for f= 1, 2 do
 			item_title = story_choice.sticker_def.item_title,
 			item_image_small = story_choice.sticker_def.item_image_small,
 			item_image_large = story_choice.sticker_def.item_image_large,
-			type = "chat_sticker"
+			type = "chat_sticker",
+			custom_description = string.format("Obtainable: Genre %d, Choice %d.", story_choice.genre, story_choice.choice)
 		}
 	end
 end

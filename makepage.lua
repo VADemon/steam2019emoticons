@@ -172,18 +172,27 @@ function writePages(sale)
 				'<img src="'.. STEAM_CONST.COMMUNITY_CDN_URL ..'economy/emoticon/%item_name_clean%">'..
 				'%item_name% - alt links: '..
 				'<a href="'.. STEAM_CONST.MEDIA_CDN_COMMUNITY_URL ..'images/items/%appid%/%item_image_large%">large</a> / '..
-				'<a href="'.. STEAM_CONST.MEDIA_CDN_COMMUNITY_URL ..'images/items/%appid%/%item_image_small%">small</a>'..
-				'<br><br>\r\n'):gsub("%%([%w%-_]+)%%", item))
+				'<a href="'.. STEAM_CONST.MEDIA_CDN_COMMUNITY_URL ..'images/items/%appid%/%item_image_small%">small</a>'
+				):gsub("%%([%w%-_]+)%%", item))
 			)
+			if item.custom_description then
+				emoticons:write(" - ".. item.custom_description)
+			end
+			emoticons:write('<br><br>\r\n')
 		elseif item.type == "chat_sticker" then
 			item.sticker_name = item.sticker_name or eventCodeName .. item.item_name:gsub("[^A-z0-9_-]", "")
 			
 			stickers:write(
 				(('<img src="'.. STEAM_CONST.MEDIA_CDN_COMMUNITY_URL ..'images/items/%appid%/%item_image_small%" class="bigimg">\r\n '..
 				'<img src="'.. STEAM_CONST.MEDIA_CDN_COMMUNITY_URL ..'images/items/%appid%/%item_image_large%" class="bigimg">'..
-				' %item_name% - assumed command: <mono>/sticker '.. item.sticker_name ..'</mono>'..
-				'<br><br>\r\n'):gsub("%%([%w%-_]+)%%", item))
+				' %item_name% - assumed command: <mono>/sticker '.. item.sticker_name ..'</mono>'
+				):gsub("%%([%w%-_]+)%%", item))
 			)
+			
+			if item.custom_description then
+				stickers:write(" - ".. item.custom_description)
+			end
+			stickers:write('<br><br>\r\n')
 		end
 	end
 	
