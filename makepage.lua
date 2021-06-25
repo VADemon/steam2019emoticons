@@ -78,6 +78,7 @@ function writeHtmlHeader(file, title)
 <html>
 <head>
 <title>]].. title ..[[</title>
+<meta name="Keywords" content="emoticon sticker list comparison overview showcase chat steam sale" />
 <style type="text/css">
 mono {
 	font-family: monospace, monospace;
