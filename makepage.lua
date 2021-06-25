@@ -97,8 +97,8 @@ a:visited {color: #7590a5}
 .bigimg {border: 1px solid rgba(0,0,0,0.3);}
 mono {
 	/* this makes selection easier */
-	margin-left: 0.4rem;
-	margin-right: 0.4rem;
+	margin-left: 0.2rem;
+	margin-right: 0.2rem;
 }
 </style>
 </head>
