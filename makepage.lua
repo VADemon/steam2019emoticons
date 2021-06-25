@@ -170,7 +170,7 @@ function writePages(sale)
 		end
 		if doStickers then
 			stickers:write(intralinks)
-			stickers:write("All Stickers are in the awesome APNG format. If you don't see the animation: your browser is a dinosaur. Donate it to your local museum.<br>")
+			stickers:write("All Stickers are in the awesome APNG format. If you don't see the animation: your browser is a dinosaur. Donate it to your local museum.<br>\r\n<hr>")
 		end
 	end
 	for id, item in pairs(fullTbl) do
