@@ -100,6 +100,17 @@ mono {
 	margin-left: 0.2rem;
 	margin-right: 0.2rem;
 }
+
+lore {
+	font-style: italic;
+	font-size: 125%;
+}
+lore::before {
+	content: "❝"; /* U+275D */ 
+}
+lore::after {
+	content: "❞"; /* U+275E */
+}
 </style>
 </head>
 <body>
@@ -190,7 +201,8 @@ function writePages(sale)
 			stickers:write(
 				(('<img src="'.. STEAM_CONST.MEDIA_CDN_COMMUNITY_URL ..'images/items/%appid%/%item_image_small%" class="bigimg" title="„%item_title%“ Steam sticker" alt="%item_name% (animated)">\r\n '..
 				'<img src="'.. STEAM_CONST.MEDIA_CDN_COMMUNITY_URL ..'images/items/%appid%/%item_image_large%" class="bigimg" title="„%item_title%“ Steam sticker" alt="%item_name% (static)">'..
-				' %item_name% - assumed command: <mono>/sticker '.. item.codeName ..'</mono>'
+				' %item_name% - assumed command: <mono>/sticker '.. item.codeName ..'</mono>'..
+				(item.lore and "<br>\r\n<lore>%lore%</lore>\r\n" or "")
 				):gsub("%%([%w%-_]+)%%", item))
 			)
 			

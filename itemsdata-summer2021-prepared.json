@@ -5,6 +5,7 @@
   "item_image_small": "306b20b41509a6364e9c72df316b9ae48484280e.png",
   "item_name": "Cry Some More",
   "item_title": "Cry Some More",
+  "lore": "While visiting Action Island, you punched the tears of a weeping muscleman directly back into his eyes, then flew off in search of even more action!",
   "sticker_name": "Cry Some More",
   "type": "chat_sticker"
 }, {
@@ -14,6 +15,7 @@
   "item_image_small": "328cecc786df57d73253a365d9ab2149a8ff880f.png",
   "item_name": "Destination, Unknown!",
   "item_title": "Destination, Unknown!",
+  "lore": "While searching for Action Island, you stumbled on Directions Island. They tried to rip you off with an overpriced $12 map, which you wisely refused to buy!",
   "sticker_name": "Destination, Unknown!",
   "type": "chat_sticker"
 }, {
@@ -23,6 +25,7 @@
   "item_image_small": "f954a325e4ee70b561f3376b04da0e59fe4834e2.png",
   "item_name": "Lead Poisoning!",
   "item_title": "Lead Poisoning!",
+  "lore": "You were trapped in a room, but escaped by bravely eating lead key parts and getting heroically rushed to the hospital!",
   "sticker_name": "Lead Poisoning!",
   "type": "chat_sticker"
 }, {
@@ -32,6 +35,7 @@
   "item_image_small": "1d618016f96751841a508f37f0730d8153e46fb3.png",
   "item_name": "Twenty Years Pass...",
   "item_title": "Twenty Years Pass...",
+  "lore": "Trapped in a room with only a phone and some key parts, you devised a diabolical, door-destroying 20-year plan that paid off with a lucrative telemarketing job!",
   "sticker_name": "Twenty Years Pass...",
   "type": "chat_sticker"
 }, {
@@ -41,6 +45,7 @@
   "item_image_small": "ea111d575b728c9662c392b8643a950433bb9bc9.png",
   "item_name": "Fantasy Genius",
   "item_title": "Fantasy Genius",
+  "lore": "You raced blindly towards danger without a protective vest or goatee! You’re one step closer to reclaiming The Helmet of Ebonmorrow!",
   "sticker_name": "Fantasy Genius",
   "type": "chat_sticker"
 }, {
@@ -50,6 +55,7 @@
   "item_image_small": "6d0e8eef7c5953bdcbb1a44e47ea1fa8f10dec21.png",
   "item_name": "You Look Great",
   "item_title": "You Look Great",
+  "lore": "You realized a true Heir of Ebonmorrow needs a sensible eight hours of sleep before embarking on a quest!",
   "sticker_name": "You Look Great",
   "type": "chat_sticker"
 }, {
@@ -59,6 +65,7 @@
   "item_image_small": "5f86059b76ab93b9ebc96563532dfb631cd694d9.png",
   "item_name": "Keep Those Hands Up",
   "item_title": "Keep Those Hands Up",
+  "lore": "Some laughed when you said boxing was the key to reading. They’re not laughing now. Your unorthodox techniques worked. Now Sauron is reading at a 7th grade level!",
   "sticker_name": "Keep Those Hands Up",
   "type": "chat_sticker"
 }, {
@@ -68,6 +75,7 @@
   "item_image_small": "4f2249972f06566c4795b6ee47bf9f4c52697b60.png",
   "item_name": "Watership Down",
   "item_title": "Watership Down",
+  "lore": "You employed reverse psychology to drive Sauron to greatness. He may hate you, but he loved Watership Down!",
   "sticker_name": "Watership Down",
   "type": "chat_sticker"
 }, {
@@ -77,6 +85,7 @@
   "item_image_small": "4b04c80c01dfbdd81a5899c6dbdc3c5681165959.png",
   "item_name": "Flawless Pancakes",
   "item_title": "Flawless Pancakes",
+  "lore": "You tried to bully your way into being the Savior of Centauri. You weren’t chosen, but on the bright side, you won’t be getting killed by Baron Fornax.",
   "sticker_name": "Flawless Pancakes",
   "type": "chat_sticker"
 }, {
@@ -86,6 +95,7 @@
   "item_image_small": "4fc61e025b387e5c796e2a6a0204941a9c561217.png",
   "item_name": "Bus Ride",
   "item_title": "Bus Ride",
+  "lore": "The Metrosoft execs loved your story pitch. Now you’re creative director on an in-development survival horror bus title starring Troy Baker as the bus.",
   "sticker_name": "Bus Ride",
   "type": "chat_sticker"
 }, {
@@ -95,6 +105,7 @@
   "item_image_small": "61039feb7b51851688fd5ff496d013eb20563036.png",
   "item_name": "Good Boy",
   "item_title": "Good Boy",
+  "lore": "You massaged Mr. Peanut Muffin’s ego into victory position!",
   "sticker_name": "Good Boy",
   "type": "chat_sticker"
 }, {
@@ -104,6 +115,7 @@
   "item_image_small": "507be0736a6dc4a675df1aa5201227b92ad8b6ff.png",
   "item_name": "Flaming Car Husk",
   "item_title": "Flaming Car Husk",
+  "lore": "You sabotaged Mr. Peanut Muffin’s rivals to ensure none of them saw the finish line!",
   "sticker_name": "Flaming Car Husk",
   "type": "chat_sticker"
 }, {
@@ -113,6 +125,7 @@
   "item_image_small": "f37c4b6b93297b636baf41666bedc1dc1eb91e4e.png",
   "item_name": "Spider Babies",
   "item_title": "Spider Babies",
+  "lore": "You learned two things during your action-filled adventure to Spider Cave. 1. Spiders aren’t bears. 2. You’re about to give birth to 30 spider babies!",
   "sticker_name": "Spider Babies",
   "type": "chat_sticker"
 }, {
@@ -122,6 +135,7 @@
   "item_image_small": "ed0f5181578ffca79866d3aacba0ae63f559679b.png",
   "item_name": "Sgghrhh…",
   "item_title": "Sgghrhh…",
+  "lore": "You challenged a spider to a battle of wits.  Unsurprisingly, spiders don’t understand your language, so it cheated!",
   "sticker_name": "Sgghrhh…",
   "type": "chat_sticker"
 }, {
@@ -131,6 +145,7 @@
   "item_image_small": "c4cb98d5b9729fc6d3d2569801d3f1c2d680e1bc.png",
   "item_name": "Your Face",
   "item_title": "Your Face",
+  "lore": "You heroically escaped Superbike Island by plane! But in doing so may have fearlessly doomed humanity!",
   "sticker_name": "Your Face",
   "type": "chat_sticker"
 }, {
@@ -140,6 +155,7 @@
   "item_image_small": "d2525acc674c2c3c0b64307ed9d9bcec329cf3df.png",
   "item_name": "Sick Trick",
   "item_title": "Sick Trick",
+  "lore": "You outwitted the superbikes, forcing them to triple backflip themselves to death. But your celebration is short lived, for soon the Night Bikes are coming...",
   "sticker_name": "Sick Trick",
   "type": "chat_sticker"
 }, {
@@ -149,6 +165,7 @@
   "item_image_small": "ad96681a9a49c8f79c7bca17782bbb1c636cce43.png",
   "item_name": "Assassinaire",
   "item_title": "Assassinaire",
+  "lore": "You heroically assassinairated 50 city guards in broad daylight!",
   "sticker_name": "Assassinaire",
   "type": "chat_sticker"
 }, {
@@ -158,6 +175,7 @@
   "item_image_small": "cd46c816565e819d3592b47da990e0e264728948.png",
   "item_name": "Feathers",
   "item_title": "Feathers",
+  "lore": "Ever the cunning Assassinaire, you avoided a fight with the city guards by bribing them with precious feathers!",
   "sticker_name": "Feathers",
   "type": "chat_sticker"
 }, {
@@ -166,6 +184,7 @@
   "item_image_small": "51b4e53751398946664838cb0f1edfc70d7e8b48.png",
   "item_name": "Modest Luxury",
   "item_title": "Modest Luxury",
+  "lore": "You confronted PsiGenTech and forced them to pay you $37,000! You’re now ready to settle into a life of modest luxury!",
   "sticker_name": "Modest Luxury",
   "type": "chat_sticker"
 }, {
@@ -175,6 +194,7 @@
   "item_image_small": "a4a666899c4ef11a32095e7aee3e1db429c98792.png",
   "item_name": "Neon Breeze",
   "item_title": "Neon Breeze",
+  "lore": "You did the one thing the corporate overlords didn’t expect: You gave away your precious IP for free. Take that, corporations!",
   "sticker_name": "Neon Breeze",
   "type": "chat_sticker"
 }, {
@@ -184,6 +204,7 @@
   "item_image_small": "c41ea9dccc47064fab9e1f37e531e0b59f0c9a2d.png",
   "item_name": "Wow, That Hurt",
   "item_title": "Wow, That Hurt",
+  "lore": "You defeated the mysterious gunman by bravely taking the bullet out of his gun and placing it squarely in your chest.  Now bulletless, he can’t shoot anyone else!",
   "sticker_name": "Wow, That Hurt",
   "type": "chat_sticker"
 }, {
@@ -193,6 +214,7 @@
   "item_image_small": "d09c4f7468b638dbae3a9217502db58ee8d014f1.png",
   "item_name": "Pacifist",
   "item_title": "Pacifist",
+  "lore": "You solved the mystery of The Case of The Gun In Your Face by cleverly agreeing to give the gunman whatever he wants!",
   "sticker_name": "Pacifist",
   "type": "chat_sticker"
 }, {
@@ -202,6 +224,7 @@
   "item_image_small": "54e52cae855091adb1f17136ecfb850660474086.png",
   "item_name": "Space Fire",
   "item_title": "Space Fire",
+  "lore": "You recklessly leapt into action, igniting the pork-flavored gas jets in your spaceship’s indoor gas fireplace!",
   "sticker_name": "Space Fire",
   "type": "chat_sticker"
 }, {
@@ -211,6 +234,7 @@
   "item_image_small": "8a93aadb2483d455b72b6e17134b91a88b2d0855.png",
   "item_name": "Peace in Space",
   "item_title": "Peace in Space",
+  "lore": "You thoughtfully built a lasting peace, which you then immediately destroyed by launching all of your missiles!",
   "sticker_name": "Peace in Space",
   "type": "chat_sticker"
 }, {
@@ -220,6 +244,7 @@
   "item_image_small": "6691c887aa569b5cd0a1db68a34d2b76e5a835ad.png",
   "item_name": "Hey, Terry",
   "item_title": "Hey, Terry",
+  "lore": "You valiantly charged a group of skeletons, who then politely gave you directions!",
   "sticker_name": "Hey, Terry",
   "type": "chat_sticker"
 }, {
@@ -229,6 +254,7 @@
   "item_image_small": "841c45a41c0f13276ef299c9548175a878cf6de7.png",
   "item_name": "Walk, Don't Run",
   "item_title": "Walk, Don't Run",
+  "lore": "You escaped the Neverending Dungeon by exploiting and infiltrating its sensible fire safety plan!",
   "sticker_name": "Walk, Don't Run",
   "type": "chat_sticker"
 }, {
@@ -238,6 +264,7 @@
   "item_image_small": "4c06a5ee1a548782a8a044ab9e594574029e6734.png",
   "item_name": "Oblivion Technique",
   "item_title": "Oblivion Technique",
+  "lore": "You unleashed the power of the Oblivion Technique, forcing your nemesis to retreat to the safety of his Tampa-based auto parts empire!",
   "sticker_name": "Oblivion Technique",
   "type": "chat_sticker"
 }, {
@@ -247,6 +274,7 @@
   "item_image_small": "8b4fce3439da3b96728454fe0ba7fc989c67e673.png",
   "item_name": "Sincere Apology Technique",
   "item_title": "Sincere Apology Technique",
+  "lore": "You unleashed the empathetic power of your emotional intelligence, crushing your enemy in a wave of understanding!",
   "sticker_name": "Sincere Apology Technique",
   "type": "chat_sticker"
 } ]
