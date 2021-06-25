@@ -121,11 +121,11 @@ end
 
 function closeHtmlWithFooter(file)
 	file:write([[
-	<br>
-	<a href="#top">↑ back up!</a>
-	</body>
-	</html>
-	]])
+<br>
+<a href="#top">↑ back up!</a>
+</body>
+</html>]]
+	)
 
 	file:close()
 end
@@ -238,9 +238,9 @@ function writeIndex()
 		if sale.stickers then
 			table.insert(salePageLinks, '<a href="'.. genStickersPath(sale.codeName) ..'">stickers</a>')
 		end
-		table.insert(salePageLinks, '<a href="https://steamdb.info/app/'.. sale.appId ..'/communityitems/">steamdb</a>\r\n')
+		table.insert(salePageLinks, '<a href="https://steamdb.info/app/'.. sale.appId ..'/communityitems/">steamdb</a>')
 		
-		index:write((("\r\n<h2>%fancyName%: ".. table.concat(salePageLinks, " | ") .."</h><br>"):gsub("%%([%w%-_]+)%%", sale)))
+		index:write((("\r\n<h2>%fancyName%: ".. table.concat(salePageLinks, " | ") .."</h2><br>\r\n"):gsub("%%([%w%-_]+)%%", sale)))
 	end
 	index:write('\r\n<br><br>[<a href="https://github.com/VADemon/steam2019emoticons">project code</a>]\r\n')
 	closeHtmlWithFooter(index)
