@@ -5,19 +5,35 @@
 
 JSON = require"JSON"
 
+-- excerpt from div#application_config, 2021.06.25
+STEAM_CONST = {
+	MEDIA_CDN_COMMUNITY_URL = "https://cdn.cloudflare.steamstatic.com/steamcommunity/public/",
+	MEDIA_CDN_URL = "https://cdn.cloudflare.steamstatic.com/",
+	COMMUNITY_CDN_URL = "https://community.cloudflare.steamstatic.com/",
+	COMMUNITY_CDN_ASSET_URL = "https://cdn.cloudflare.steamstatic.com/steamcommunity/public/assets/",
+	STORE_CDN_URL = "https://store.cloudflare.steamstatic.com/",
+	PUBLIC_SHARED_URL = "https://store.cloudflare.steamstatic.com/public/shared/",
+	COMMUNITY_BASE_URL = "https://steamcommunity.com/",
+	CHAT_BASE_URL = "https://steamcommunity.com/",
+	STORE_BASE_URL = "https://store.steampowered.com/",
+	IMG_URL = "https://store.cloudflare.steamstatic.com/public/images/",
+	STEAMTV_BASE_URL = "https://steam.tv/",
+	HELP_BASE_URL = "https://help.steampowered.com/",
+	PARTNER_BASE_URL = "https://partner.steamgames.com/",
+	STATS_BASE_URL = "https://partner.steampowered.com/",
+	INTERNAL_STATS_BASE_URL = "https://steamstats.valve.org/",
+	STORE_ICON_BASE_URL = "https://cdn.cloudflare.steamstatic.com/steam/apps/",
+	WEBAPI_BASE_URL = "https://api.steampowered.com/",
+	TOKEN_URL = "https://store.steampowered.com//chat/clientjstoken",
+	BASE_URL_STORE_CDN_ASSETS = "https://cdn.cloudflare.steamstatic.com/store/",
+}
+
 salesTbl = {
-	--[[
-	{
-		pageTitle = "",
-		fancyName = "",
-		codeName = "",
-		jsonFile = ""
-	}
-	]]
 	{
 		pageTitle = "Steam 2019 Winter Sale emoticons showcase",
 		fancyName = "Winter Sale 2019",
 		codeName = "Winter2019",
+		appId = 1195690,
 		jsonFile = "itemsdata-winter2019.json",
 		emoticons = true,
 		stickers = true
@@ -26,8 +42,26 @@ salesTbl = {
 		pageTitle = "Steam 2020 Lunar Sale emoticons showcase",
 		fancyName = "Lunar Sale 2020",
 		codeName = "Lunar2020",
+		appId = 1223590,
 		jsonFile = "itemsdata-lunar2020.json",
 		emoticons = true,
+		stickers = true
+	},
+	--[[ Summer 2021 Data is not publicly available in a JSON like before
+	Instead each account only gets his share served by the server.
+	
+	The data was extracted from two accounts that answered the exact opposite
+	of each other
+	URL (logged in): https://store.steampowered.com/forgeyourfate
+	Javascript in browser console: window.prompt("Copy to clipboard: Ctrl+C, Enter", document.getElementById("application_config").getAttribute("data-summerstory"));
+	]]
+	{
+		pageTitle = "Steam 2021 Summer Sale Sticker showcase",
+		fancyName = "Summer Sale 2021",
+		codeName = "ForgeYourFate",
+		appId = 1658760,
+		jsonFile = "itemsdata-summer2021-prepared.json",
+		emoticons = false,
 		stickers = true
 	}
 }
@@ -79,52 +113,81 @@ function closeHtmlWithFooter(file)
 	file:close()
 end
 
-function writePages(pageTitle, fancyName, eventCodeName, jsonPath)
+function writePages(sale)
+	local pageTitle, fancyName, eventCodeName, jsonPath = sale.pageTitle, sale.fancyName, sale.codeName, sale.jsonFile
+	local doEmoticons = sale.emoticons
+	local doStickers = sale.stickers
+	
 	local dataFile = io.open(jsonPath,"r")
 	local fullTbl = JSON:decode(dataFile:read("*a"))
 	dataFile:close()
 
+	local emoticons
 	local emoticonsPath = genEmoticonsPath(eventCodeName)
-	local stickersPath = genStickersPath(eventCodeName)
+	if doEmoticons then
+		emoticons = io.open(emoticonsPath, "w")
+		writeHtmlHeader(emoticons, pageTitle)
+	end
 	
-	local emoticons = io.open(emoticonsPath, "w")
-	local stickers = io.open(stickersPath, "w")
+	local stickers
+	local stickersPath = genStickersPath(eventCodeName)
+	if doStickers then
+		stickers = io.open(stickersPath, "w")
+		writeHtmlHeader(stickers, pageTitle)
+	end
 
 	do
-		writeHtmlHeader(emoticons, pageTitle)
-		writeHtmlHeader(stickers, pageTitle)
-		local intralinks = 'Pages: <a href="index.html">Index & other sales</a> || <a href="'.. emoticonsPath ..'">Emoticons</a> | <a href="'.. stickersPath ..'">Stickers</a><br>'
-		emoticons:write(intralinks)
-		stickers:write(intralinks)
-		stickers:write("All Stickers are in the awesome APNG format. If you don't see the animation: your browser is a dinosaur. Donate it to your local museum.<br>")
+		local intralinks = 'Pages: <a href="index.html">Index & other sales</a> || '
+		local linkList = {}
+		if doEmoticons then
+			table.insert(linkList, '<a href="'.. emoticonsPath ..'">Emoticons</a>')
+		end
+		if doStickers then
+			table.insert(linkList, '<a href="'.. stickersPath ..'">Stickers</a>')
+		end
+		table.insert(linkList, '<a href="https://steamdb.info/app/'.. sale.appId ..'/communityitems/">steamdb</a>')
+		intralinks = intralinks .. table.concat(linkList, ' | ') .. "<br>\r\n"
+
+		if doEmoticons then
+			emoticons:write(intralinks)
+		end
+		if doStickers then
+			stickers:write(intralinks)
+			stickers:write("All Stickers are in the awesome APNG format. If you don't see the animation: your browser is a dinosaur. Donate it to your local museum.<br>")
+		end
 	end
 	for id, item in pairs(fullTbl) do
-		if item.type == "emoticon" then
+		if not item.item_name_clean and item.item_name then
 			item.item_name_clean = item.item_name:gsub(":", "")
-			--print(item.item_name)
+		end
+		
+		if item.type == "emoticon" then
 			emoticons:write(
-				(('<img src="https://steamcommunity-a.akamaihd.net/economy/emoticonlarge/%item_name_clean%" class="bigimg">\r\n '..
-				'<img src="https://steamcommunity-a.akamaihd.net/economy/emoticon/%item_name_clean%">'..
+				(('<img src="'.. STEAM_CONST.COMMUNITY_CDN_URL ..'economy/emoticonlarge/%item_name_clean%" class="bigimg">\r\n '..
+				'<img src="'.. STEAM_CONST.COMMUNITY_CDN_URL ..'economy/emoticon/%item_name_clean%">'..
 				'%item_name% - alt links: '..
-				'<a href="https://steamcdn-a.akamaihd.net/steamcommunity/public/images/items/%appid%/%item_image_large%">large</a> / '..
-				'<a href="https://steamcdn-a.akamaihd.net/steamcommunity/public/images/items/%appid%/%item_image_small%">small</a>'..
+				'<a href="'.. STEAM_CONST.MEDIA_CDN_COMMUNITY_URL ..'images/items/%appid%/%item_image_large%">large</a> / '..
+				'<a href="'.. STEAM_CONST.MEDIA_CDN_COMMUNITY_URL ..'images/items/%appid%/%item_image_small%">small</a>'..
 				'<br><br>\r\n'):gsub("%%([%w%-_]+)%%", item))
 			)
 		elseif item.type == "chat_sticker" then
-			item.item_name_clean = item.item_name:gsub(":", "")
-			item.sticker_name = eventCodeName .. item.item_name:gsub("[^A-z0-9_-]", "")
+			item.sticker_name = item.sticker_name or eventCodeName .. item.item_name:gsub("[^A-z0-9_-]", "")
 			
 			stickers:write(
-				(('<img src="https://steamcdn-a.akamaihd.net/steamcommunity/public/images/items/%appid%/%item_image_small%" class="bigimg">\r\n '..
-				'<img src="https://steamcdn-a.akamaihd.net/steamcommunity/public/images/items/%appid%/%item_image_large%" class="bigimg">'..
+				(('<img src="'.. STEAM_CONST.MEDIA_CDN_COMMUNITY_URL ..'images/items/%appid%/%item_image_small%" class="bigimg">\r\n '..
+				'<img src="'.. STEAM_CONST.MEDIA_CDN_COMMUNITY_URL ..'images/items/%appid%/%item_image_large%" class="bigimg">'..
 				' %item_name% - assumed command: <mono>/sticker '.. item.sticker_name ..'</mono>'..
 				'<br><br>\r\n'):gsub("%%([%w%-_]+)%%", item))
 			)
 		end
 	end
-
-	closeHtmlWithFooter(emoticons)
-	closeHtmlWithFooter(stickers)
+	
+	if doEmoticons then
+		closeHtmlWithFooter(emoticons)
+	end
+	if doStickers then
+		closeHtmlWithFooter(stickers)
+	end
 end
 
 function writeIndex()
@@ -134,7 +197,7 @@ function writeIndex()
 	index:write("\r\n<h1>Steam Sales Emoticons and Stickers preview</h1><br>")
 	for n, sale in pairs(salesTbl) do
 		print("Writing: #".. n, sale.codeName)
-		writePages(sale.pageTitle, sale.fancyName, sale.codeName, sale.jsonFile)
+		writePages(sale)
 		
 		local salePageLinks = {}
 		if sale.emoticons then
@@ -143,10 +206,11 @@ function writeIndex()
 		if sale.stickers then
 			table.insert(salePageLinks, '<a href="'.. genStickersPath(sale.codeName) ..'">stickers</a>')
 		end
+		table.insert(salePageLinks, '<a href="https://steamdb.info/app/'.. sale.appId ..'/communityitems/">steamdb</a>\r\n')
 		
 		index:write((("\r\n<h2>%fancyName%: ".. table.concat(salePageLinks, " | ") .."</h><br>"):gsub("%%([%w%-_]+)%%", sale)))
 	end
-	
+	index:write('\r\n<br><br>[<a href="https://github.com/VADemon/steam2019emoticons">project code</a>]\r\n')
 	closeHtmlWithFooter(index)
 end
 

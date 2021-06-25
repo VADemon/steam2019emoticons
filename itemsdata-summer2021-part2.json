@@ -1,0 +1,175 @@
+{
+	"story_choices": [
+		{
+			"genre": 1,
+			"choice": 1,
+			"sticker_def": {
+				"item_name": "Cry Some More",
+				"item_title": "Cry Some More",
+				"item_description": null,
+				"item_image_small": "306b20b41509a6364e9c72df316b9ae48484280e.png",
+				"item_image_large": "6291dbaf1062c32123914a521cde1251eb9cc590.png"
+			},
+			"time_chosen": 1624578016
+		},
+		{
+			"genre": 2,
+			"choice": 2,
+			"sticker_def": {
+				"item_name": "Twenty Years Pass...",
+				"item_title": "Twenty Years Pass...",
+				"item_description": null,
+				"item_image_small": "1d618016f96751841a508f37f0730d8153e46fb3.png",
+				"item_image_large": "02bd11e7494880fd89a86366526716446c0ca717.png"
+			},
+			"time_chosen": 1624578158
+		},
+		{
+			"genre": 3,
+			"choice": 2,
+			"sticker_def": {
+				"item_name": "You Look Great",
+				"item_title": "You Look Great",
+				"item_description": null,
+				"item_image_small": "6d0e8eef7c5953bdcbb1a44e47ea1fa8f10dec21.png",
+				"item_image_large": "336ca79a93ec35c65aee46c751e7067d5857d56d.png"
+			},
+			"time_chosen": 1624578187
+		},
+		{
+			"genre": 4,
+			"choice": 2,
+			"sticker_def": {
+				"item_name": "Watership Down",
+				"item_title": "Watership Down",
+				"item_description": null,
+				"item_image_small": "4f2249972f06566c4795b6ee47bf9f4c52697b60.png",
+				"item_image_large": "167397372ffb21ad240f6abe706b315c3a0c0b44.png"
+			},
+			"time_chosen": 1624578210
+		},
+		{
+			"genre": 5,
+			"choice": 2,
+			"sticker_def": {
+				"item_name": "Bus Ride",
+				"item_title": "Bus Ride",
+				"item_description": null,
+				"item_image_small": "4fc61e025b387e5c796e2a6a0204941a9c561217.png",
+				"item_image_large": "1f43d52ca4c406bfb31b93abc730e42fd3ff9068.png"
+			},
+			"time_chosen": 1624578232
+		},
+		{
+			"genre": 6,
+			"choice": 2,
+			"sticker_def": {
+				"item_name": "Flaming Car Husk",
+				"item_title": "Flaming Car Husk",
+				"item_description": null,
+				"item_image_small": "507be0736a6dc4a675df1aa5201227b92ad8b6ff.png",
+				"item_image_large": "b7d4bcfd6bbfa7bc8a37f2e0e22be488e9b7b5d5.png"
+			},
+			"time_chosen": 1624578250
+		},
+		{
+			"genre": 7,
+			"choice": 1,
+			"sticker_def": {
+				"item_name": "Spider Babies",
+				"item_title": "Spider Babies",
+				"item_description": null,
+				"item_image_small": "f37c4b6b93297b636baf41666bedc1dc1eb91e4e.png",
+				"item_image_large": "067fa41236773e8ae960e3c0f8587a99b895d3c8.png"
+			},
+			"time_chosen": 1624578269
+		},
+		{
+			"genre": 8,
+			"choice": 1,
+			"sticker_def": {
+				"item_name": "Your Face",
+				"item_title": "Your Face",
+				"item_description": null,
+				"item_image_small": "c4cb98d5b9729fc6d3d2569801d3f1c2d680e1bc.png",
+				"item_image_large": "e2d2d96deb67c6626320a67fd6e5cb097ab89706.png"
+			},
+			"time_chosen": 1624578292
+		},
+		{
+			"genre": 9,
+			"choice": 2,
+			"sticker_def": {
+				"item_name": "Feathers",
+				"item_title": "Feathers",
+				"item_description": null,
+				"item_image_small": "cd46c816565e819d3592b47da990e0e264728948.png",
+				"item_image_large": "d898061a9b699c7a1ba629ac62aac08c3c9150e3.png"
+			},
+			"time_chosen": 1624578311
+		},
+		{
+			"genre": 10,
+			"choice": 1,
+			"sticker_def": {
+				"item_name": "Modest Luxury",
+				"item_title": "Modest Luxury",
+				"item_description": null,
+				"item_image_small": "51b4e53751398946664838cb0f1edfc70d7e8b48.png",
+				"item_image_large": null
+			},
+			"time_chosen": 1624578340
+		},
+		{
+			"genre": 11,
+			"choice": 1,
+			"sticker_def": {
+				"item_name": "Wow, That Hurt",
+				"item_title": "Wow, That Hurt",
+				"item_description": null,
+				"item_image_small": "c41ea9dccc47064fab9e1f37e531e0b59f0c9a2d.png",
+				"item_image_large": "2ad9f2126151effb0b052d7c81e78f29968e5481.png"
+			},
+			"time_chosen": 1624578389
+		},
+		{
+			"genre": 12,
+			"choice": 1,
+			"sticker_def": {
+				"item_name": "Space Fire",
+				"item_title": "Space Fire",
+				"item_description": null,
+				"item_image_small": "54e52cae855091adb1f17136ecfb850660474086.png",
+				"item_image_large": "faf355d3cc8072ed437f9b1ce9572483c5a8d0b3.png"
+			},
+			"time_chosen": 1624578409
+		},
+		{
+			"genre": 13,
+			"choice": 1,
+			"sticker_def": {
+				"item_name": "Hey, Terry",
+				"item_title": "Hey, Terry",
+				"item_description": null,
+				"item_image_small": "6691c887aa569b5cd0a1db68a34d2b76e5a835ad.png",
+				"item_image_large": "670126880829aa1770dd97243f3c1a26c9a32e14.png"
+			},
+			"time_chosen": 1624578429
+		},
+		{
+			"genre": 14,
+			"choice": 2,
+			"sticker_def": {
+				"item_name": "Sincere Apology Technique",
+				"item_title": "Sincere Apology Technique",
+				"item_description": null,
+				"item_image_small": "8b4fce3439da3b96728454fe0ba7fc989c67e673.png",
+				"item_image_large": "ea81582b6eb6d389ef8d2f0ae4b551728a498d39.png"
+			},
+			"time_chosen": 1624578513
+		}
+	],
+	"badge_granted": 53,
+	"header": "https://cdn.cloudflare.steamstatic.com/steam/clusters/sale_autumn2019_assets/54b5034d397baccb93181cc6/home_header_text_english.png?t=1624567731",
+	"header_mobile": "https://cdn.cloudflare.steamstatic.com/steam/clusters/sale_autumn2019_assets/54b5034d397baccb93181cc6/home_header_text_mobile_english.png?t=1624567731"
+}
