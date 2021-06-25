@@ -46,7 +46,9 @@ for f= 1, 2 do
 			item_image_small = story_choice.sticker_def.item_image_small,
 			item_image_large = story_choice.sticker_def.item_image_large,
 			type = "chat_sticker",
-			custom_description = string.format("Obtainable: Genre %d, Choice %d.", story_choice.genre, story_choice.choice),
+			custom_description = string.format("Obtainable: Genre %d (%s), Choice %d.", 
+				story_choice.genre, genreToName[story_choice.genre], story_choice.choice
+			),
 			lore = getOutcomeSummary(story_choice.genre,  story_choice.choice)
 		}
 	end
