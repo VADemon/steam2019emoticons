@@ -170,7 +170,7 @@ function writePages(sale)
 			emoticons:write(
 				(('<img src="'.. STEAM_CONST.COMMUNITY_CDN_URL ..'economy/emoticonlarge/%item_name_clean%" class="bigimg">\r\n '..
 				'<img src="'.. STEAM_CONST.COMMUNITY_CDN_URL ..'economy/emoticon/%item_name_clean%">'..
-				'%item_name% - alt links: '..
+				'<mono>%item_name%</mono> - alt links: '..
 				'<a href="'.. STEAM_CONST.MEDIA_CDN_COMMUNITY_URL ..'images/items/%appid%/%item_image_large%">large</a> / '..
 				'<a href="'.. STEAM_CONST.MEDIA_CDN_COMMUNITY_URL ..'images/items/%appid%/%item_image_small%">small</a>'
 				):gsub("%%([%w%-_]+)%%", item))
